@@ -5,7 +5,7 @@ public class Driver {
 	public static void main(String[] args) {
 		
 		Counter counter = new Counter();
-		
+		int UnUsedVariable = 10;
 		System.out.println("Current count:" + counter.getCount());
 		
 		counter.increment();
