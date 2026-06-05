@@ -33,7 +33,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Build with Maven
+    - name: Verify settings.xml exists
       run: ls -al ~/.m2
 
     - name: Publish to GitHub Packages
