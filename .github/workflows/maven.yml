@@ -35,8 +35,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Verify settings.xml exists
-      run: ls -al ~/.m2
+    # - name: Verify settings.xml exists
+    #   run: ls -al ~/.m2
 
     - name: Publish to GitHub Packages
       run: mvn deploy
