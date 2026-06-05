@@ -37,6 +37,8 @@ jobs:
 
     # - name: Verify settings.xml exists
     #   run: ls -al ~/.m2
+    - name: Show generated settings.xml
+      run: cat $GITHUB_WORKSPACE/settings.xml
 
     - name: Publish to GitHub Packages
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
